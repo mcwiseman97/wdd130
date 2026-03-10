@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     color: rebeccapurple;
 }
@@ -18,6 +25,11 @@ nav {
     background-color: #eee;
     border: 1px solid rgb(0 0 0 /0.2);
     display: block;
+}
+
+nav a {
+    color: black;
+
 }
 
 main {
@@ -55,6 +67,7 @@ main img {
 }
 
 footer {
+    max-width: 840px;
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
