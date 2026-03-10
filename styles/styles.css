@@ -24,11 +24,12 @@ nav {
     padding: 1rem;
     background-color: #eee;
     border: 1px solid rgb(0 0 0 /0.2);
-    display: block;
 }
 
 nav a {
+    display: block;
     color: black;
+    padding: 5px;
 
 }
 
