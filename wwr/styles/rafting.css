@@ -86,9 +86,7 @@ div {
     height: auto;
 }
 
-.hero article {
-    position: absolute;
-}
+.hero article {}
 
 .hero article img {
     float: right;
