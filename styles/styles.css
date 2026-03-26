@@ -12,28 +12,44 @@ body {
 
 h1 {
     color: rebeccapurple;
+    border-bottom: #000;
 }
 
 p {
     padding: 0;
 }
 
-nav {
+header,
+.grid,
+footer {
     max-width: 840px;
-    margin: 1rem;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: steelblue;
     padding: 1rem;
-    background-color: #eee;
-    border: 1px solid rgb(0 0 0 /0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     display: block;
-    color: black;
-    padding: 5px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;/% shorthand for white %/
+}
 
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 main {
+    grid-column: 2/3;
     max-width: 840px;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 /0.2);
@@ -51,6 +67,10 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
