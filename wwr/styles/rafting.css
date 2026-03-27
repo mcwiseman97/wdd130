@@ -11,6 +11,7 @@
     --primary-color: #055a05;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
+    --text-color: #333333;
 }
 
 header,
@@ -65,7 +66,7 @@ nav ul {
 nav a {
     text-decoration: none;
     text-align: center;
-    padding: auto 10px;
+    padding: 0 10px;
     min-width: 50px;
     color: black;
 }
