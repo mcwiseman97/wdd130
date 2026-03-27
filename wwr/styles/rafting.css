@@ -115,10 +115,17 @@ div {
     z-index: 1;
 }
 
+.hero article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .hero article img {
-    width: 300px;
-    height: auto;
+    width: 250px;
     float: right;
+    margin-left: 20px;
+    border: 5px solid white;
 }
 
 figure {
