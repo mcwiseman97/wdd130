@@ -1,10 +1,19 @@
+<!--
+    Author: Michael Wiseman
+    Date: 4/1/2026
+    Purpose: Contact us
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <meta name="description"
+      content="This page has a form to contact us if you have any questions or concers.">
+    <meta name="author" content="Michael Wiseman">
+    <title>Contact Us Page</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -12,19 +21,95 @@
     <header>
         <img src="images/logo.jpeg" alt="Logo">
         <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>
+                Kolob, California<br>
+                +1 999 999 9999<br>
+                info@whitewater.com</p>
+        </section>
+
+        <div class="contact-grid">
+            <section class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62115.11882868536!2d-96.78522025115352!3d32.77387950897943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1775072611607!5m2!1sen!2sus"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <section class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-item">
+                        <label for="user_name">Name</label>
+                        <input type="text" id="user_name" name="user_name"
+                          placeholder="Placeholder">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" name="user_email"
+                          placeholder="Placeholder">
+                    </div>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <label><input type="radio" name="purpose" value="general" checked> General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                            Question</label>
+                        <label><input type="radio" name="purpose" value="website"> Website
+                            Suggestion</label>
+                    </fieldset>
+
+                    <div class="form-item">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                          placeholder="Type here"></textarea>
+                    </div>
+
+                    <div class="form-item checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                        <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
+                    </div>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee Profile">
+                    <figcaption>Employee Name</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee Profile">
+                    <figcaption>Employee Name</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee Profile">
+                    <figcaption>Employee Name</figcaption>
+                </figure>
+            </div>
+        </section>
+
     </main>
     <footer>
-        <p>Footer</p>
+        <p>Web Master: Michael Wiseman | Email: mwiseman@byupthway.edu | © 2026</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube.svg" alt="Youtube"></a>
+        </nav>
     </footer>
 </body>
 
