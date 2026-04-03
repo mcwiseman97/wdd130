@@ -32,13 +32,15 @@ header {
 }
 
 div h1 {
-    grid-template-columns: 100px auto;
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     border: 1px solid rgb(0 0 0 /0.2);
-    justify-content: space-between;
-    align-items: center;
-    display: grid;
-    margin: 15px;
+    text-align: center;
+    position: absolute;
+    padding: 16px;
+    opacity: 0.7;
+    width: 100%;
+    color: #fff;
+    top: 20px;
 }
 
 header img {
@@ -80,17 +82,6 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-
-div h1 {
-    background-color: var(--accent1-color);
-    text-align: center;
-    position: absolute;
-    padding: 16px;
-    opacity: 0.7;
-    width: 100%;
-    color: #fff;
-    top: 20px;
 }
 
 section,
@@ -146,7 +137,6 @@ section p {
 
 section p img {
     max-width: 250px;
-
     height: auto;
     display: block;
 }
@@ -196,14 +186,14 @@ iframe {
     height: 350px;
 }
 
-#selectionfeild {
+#selectionfield {
     display: flex;
     flex-direction: column;
     text-align: left;
     flex-wrap: wrap;
 }
 
-#selectionfeild label {
+#selectionfield label {
     align-content: center;
 }
 
@@ -237,16 +227,15 @@ footer img {
     display: flex;
     flex-direction: column;
     text-align: left;
+    align-content: space-between;
+}
+
+.form-item.checkbox {
+    flex-direction: row;
 }
 
 .contact-grid {
     display: flex;
-}
-
-.form-item {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
 }
 
 .employee-grid {
@@ -254,7 +243,7 @@ footer img {
     flex-direction: row;
 }
 
-figure img {
+.employee-grid figure img {
     width: 100px;
     height: 100px;
     margin: auto;
