@@ -2,6 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: none;
+
+}
+
+fieldset {
+    border: none;
 }
 
 :root {
@@ -30,6 +36,7 @@ header {
     font-family: var(--heading-font);
     color: var(--primary-color);
     display: flex;
+    background-color: var(--accent2-color);
 }
 
 header nav {
@@ -196,6 +203,7 @@ iframe {
     flex-direction: column;
     text-align: left;
     flex-wrap: wrap;
+    border: none;
 }
 
 #selectionfield label {
@@ -220,6 +228,10 @@ footer img {
     height: auto;
 }
 
+label {
+    padding-right: 25px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -230,26 +242,56 @@ footer img {
 
 .form-item {
     display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-content: space-between;
+    border: none;
+}
+
+.form-message {
+    display: flex;
     flex-direction: column;
     text-align: left;
     align-content: space-between;
+    border: none;
 }
 
-.form-item.checkbox {
+.form-checkbox {
     flex-direction: row;
+    padding-right: 10px;
+    border: none;
 }
 
 .contact-grid {
     display: flex;
+    border-style: none;
+    border: none;
 }
 
 .employee-grid {
     display: flex;
     flex-direction: row;
+    border: none;
 }
 
 .employee-grid figure img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    border: none;
+}
+
+#selectionfield p {
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    vertical-align: auto;
+    border: none;
+}
+
+.contact-form {
+    border: none;
 }
