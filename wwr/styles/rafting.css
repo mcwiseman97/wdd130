@@ -29,6 +29,11 @@ body {
 header {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    display: flex;
+}
+
+header nav {
+    float: right;
 }
 
 div h1 {
