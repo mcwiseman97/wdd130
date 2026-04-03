@@ -186,6 +186,22 @@ footer {
     display: flex;
 }
 
+iframe {
+    width: 350px;
+    height: 350px;
+}
+
+#selectionfeild {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+#selectionfeild label {
+    align-content: center;
+}
+
 footer nav {
     flex-direction: row;
     display: flex;
@@ -212,7 +228,29 @@ footer img {
     display: inline;
 }
 
-iframe {
-    width: 350px;
-    height: 350px;
+.form-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-grid {
+    display: flex;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.employee-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+figure img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
 }
